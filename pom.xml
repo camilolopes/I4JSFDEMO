@@ -3,10 +3,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.camilolopes.readerweb</groupId>
-	<artifactId>readerweb</artifactId>
+	<groupId>com.camilolopes.i4jsfdemo</groupId>
+	<artifactId>i4jsfdemo</artifactId>
 	<version>1.0.0</version>
-	<name>ReaderWeb</name>
 	<properties>
 		<maven.test.failure.ignore>false</maven.test.failure.ignore>
 		<spring.framework.version>3.2.0.RELEASE</spring.framework.version>
@@ -15,7 +14,7 @@
 	</properties>
 
 	<build>
-		<finalName>ReaderWeb</finalName>
+		<finalName>I4JSFDEMO</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -26,13 +25,12 @@
 					<target>1.6</target>
 				</configuration>
 			</plugin>
-			<!-- configurando o plugin do TOMCAT -->
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<configuration>
 					<port>8080</port>
-					<path>/ReaderWeb</path>
+					<path>/I4JSFDEMO</path>
 				</configuration>
 			</plugin>
 
@@ -58,7 +56,7 @@
 				<configuration>
 					<scanIntervalSeconds>3</scanIntervalSeconds>
 					<webAppConfig>
-						<contextPath>/ReaderWeb</contextPath>
+						<contextPath>/I4JSFDEMO</contextPath>
 					</webAppConfig>
 				</configuration>
 			</plugin>
@@ -92,6 +90,15 @@
 			<name>Prime Repo</name>
 			<url>http://repository.primefaces.org</url>
 		</repository>
+		<repository>
+			<id>I4JSF-mvn-repo</id>
+			<url>https://raw.github.com/camilolopes/I4JSF-API/mvn-repo/</url>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+		</repository>
+
 
 	</repositories>
 
@@ -253,30 +260,29 @@
 			<artifactId>spring-core</artifactId>
 			<version>3.2.0.RELEASE</version>
 		</dependency>
-<!-- 
-	<dependency>
-		<groupId>org.codehaus.mojo</groupId>
-		<artifactId>selenium-maven-plugin</artifactId>
-		<version>2.3</version>
-	</dependency>
- -->
- 
- 	<!-- <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-java</artifactId>
-        <version>2.33.0</version>
-    </dependency> 
-     -->
-     <!-- 
-     <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-server</artifactId>
-        <version>2.33.0</version>
-    </dependency> -->
+
+		<dependency>
+			<groupId>aopalliance</groupId>
+			<artifactId>aopalliance</artifactId>
+			<version>1.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>1.6.6</version>
+		</dependency>
+		<dependency>
+			<groupId>com.i4jsf</groupId>
+			<artifactId>i4jsf</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
 	</dependencies>
 
 	<packaging>war</packaging>
 
 
 
+	<name>I4JSFDemo</name>
 </project>
