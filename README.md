@@ -25,19 +25,21 @@ We let comment code using natural JSF, like this it is possible compare with I4J
 * UserController.java 
 ```java
 /*
-   * I4JSF API  reducing code
+   * Natural JSF Code
 	 */
 	public void addFacesContext(String notification){
 //		FacesContext facesContext = FacesContext.getCurrentInstance();
 //		ResourceBundle bundle = facesContext.getApplication().getResourceBundle(facesContext, "language");
 //		String msgBundle = bundle.getString(notification);
 //		addFacesMessage(facesContext, msgBundle);
+/* I4JSF API Code */
 		new I4JSF().addTranslateContext("language", notification);
 	}
   ```
 
 * TypeController.java
 ```java
+/* Natural JSF Code */
 //  		FacesContext context = FacesContext.getCurrentInstance();
 //			ResourceBundle bundle = context.getApplication().getResourceBundle(context, "language");
 //			String msgTypeDuplicated =	bundle.getString("msg.error.type.duplicated");
