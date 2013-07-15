@@ -1,6 +1,6 @@
 ##JEE Project Example using I4JSF API
 
-###How to Run I4JSFDEMO application?
+###How to Run I4JSFDEMO application locally?
 
 1. download project ;
 2. unzip project;
@@ -10,6 +10,9 @@
 6. add a type of user, for example: Manager, Developer, Admin 
 7. Click back; 
 8. add new User in application 
+
+###I4JSFDemo Online 
+http://apps.camilolopes.com.br/I4JSFDEMO/
 
 ###Testing Internationalization
 
