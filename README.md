@@ -13,7 +13,7 @@
 
 ###Testing Internationalization
 
-Support: only Portuguese (BR) and English (US)
+Support by Default in example: only Portuguese (BR) and English (US)
 
 - Try add new user without e-mail and see notification in idiom of your browser.
 - try add duplicated user;
