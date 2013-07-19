@@ -11,9 +11,6 @@
 7. Click back; 
 8. add new User in application 
 
-###I4JSFDemo Online 
-http://apps.camilolopes.com.br/I4JSFDEMO/
-
 ###Testing Internationalization
 
 Support: only Portuguese (BR) and English (US)
