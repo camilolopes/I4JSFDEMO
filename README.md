@@ -11,6 +11,9 @@
 7. Click back; 
 8. add new User in application 
 
+###I4JSFDEMO Online 
+http://i4jsfdemo-camilolopes.rhcloud.com/
+
 ###Testing Internationalization
 
 Support by Default in example: only Portuguese (BR) and English (US)
