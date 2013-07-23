@@ -11,7 +11,7 @@
 7. Click back; 
 8. add new User in application 
 
-###I4JSFDEMO Online 
+###I4JSFDEMO Online - OpenShift
 http://i4jsfdemo-camilolopes.rhcloud.com/
 
 ###Testing Internationalization
